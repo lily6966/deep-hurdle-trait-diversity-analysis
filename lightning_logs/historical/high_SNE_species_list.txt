@@ -1,0 +1,71 @@
+species
+Reddish Egret
+Dark-eyed Junco
+Graylag Goose
+Fish Crow
+White-winged Scoter
+Golden-winged Warbler
+Orange-crowned Warbler
+American Redstart
+Least Flycatcher
+Dunlin
+American Avocet
+Baltimore Oriole
+Short-billed Dowitcher
+Great Blue Heron
+Common Gallinule
+Yellow-crowned Night Heron
+Neotropic Cormorant
+Horned Grebe
+Horned Lark
+Monk Parakeet
+Canvasback
+Northern Harrier
+Blackpoll Warbler
+European Starling
+Brown Thrasher
+Downy Woodpecker
+Bullock's Oriole
+Cape May Warbler
+Cerulean Warbler
+American Crow
+Dickcissel
+Brown Noddy
+Great Black-backed Gull
+Eastern Phoebe
+Caspian Tern
+Red Junglefowl
+Royal Tern
+Blue Grosbeak
+Ross's Goose
+Black-and-white Warbler
+Tropical Kingbird
+Purple Finch
+Eastern Kingbird
+Indigo Bunting
+Acadian Flycatcher
+Red-eyed Vireo
+Solitary Sandpiper
+Gull-billed Tern
+Nashville Warbler
+Black-headed Gull
+Little Blue Heron
+Warbling Vireo
+Black-whiskered Vireo
+Brown Pelican
+Fox Sparrow
+Black Scoter
+Gray-cheeked Thrush
+Grasshopper Sparrow
+Field Sparrow
+Hairy Woodpecker
+Long-billed Dowitcher
+Sandwich Tern
+Lesser Yellowlegs
+White-throated Sparrow
+Bald Eagle
+Bridled Tern
+Groove-billed Ani
+Killdeer
+Allen's Hummingbird
+Hooded Warbler

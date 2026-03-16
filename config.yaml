@@ -1,0 +1,27 @@
+# Model configuration
+model:
+  input_dim: 31
+  label_dim: 350
+  latent_dim: 56
+  emb_size: 2048
+  scale_coeff: 1
+  reg: "gmvae"
+  test_sample: false
+  keep_prob: 0.3
+
+# Training configuration
+training:
+  max_epoch: 500
+  batch_size: 4096
+  lr_classifier: 5e-3
+  lr_regressor: 2e-4
+  lr_decay: 0.5
+  lr_decay_times: 4
+
+# Data configuration
+data:
+  data_path: './DATA/ebird_entire/ebird_data0718.npz'
+  train_size: 0.7
+  val_size: 0.15
+  test_size: 0.15
+  random_seed: 42

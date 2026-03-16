@@ -1,0 +1,23 @@
+config:
+  data:
+    data_path: ./DATA/ebird_entire/ebird_data0718.npz
+    random_seed: 42
+    test_size: 0.15
+    train_size: 0.7
+    val_size: 0.15
+  model:
+    emb_size: 2048
+    input_dim: 31
+    keep_prob: 0.3
+    label_dim: 350
+    latent_dim: 56
+    reg: gmvae
+    scale_coeff: 1
+    test_sample: false
+  training:
+    batch_size: 4096
+    lr_classifier: 5e-3
+    lr_decay: 0.5
+    lr_decay_times: 4
+    lr_regressor: 2e-4
+    max_epoch: 500

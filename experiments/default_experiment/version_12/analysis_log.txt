@@ -1,0 +1,96 @@
+Binary results path: experiments/default_experiment/version_12/binary_results.npz
+Count results path: experiments/default_experiment/version_12/count_results.npz
+Binary data shape: (17331, 700) - 350 features
+Count data shape: (17331, 700) - 350 features
+Loading hparams from experiments/default_experiment/version_12/hparams.yaml
+Loading training data to calculate non-zero rates...
+feat_data type: <class 'numpy.ndarray'>
+feat_data shape: (115532, 31)
+np is actually: <module 'numpy' from '/Users/liyingnceas/GitHub/Deep-hurdle-population-model-exp/venv/lib/python3.12/site-packages/numpy/__init__.py'> | type: <class 'module'>
+
+Overall Binary Classification:
+Accuracy: 0.8565
+F1 Score: 0.2811
+
+Binary metrics by class:
+     Class                       Label  ...  Positive Rate  Non-Zero Rate
+0        0          Acadian Flycatcher  ...       0.008309       0.007539
+1        1            Alder Flycatcher  ...       0.000000       0.000130
+2        2         Allen's Hummingbird  ...       0.001096       0.000909
+3        3             American Avocet  ...       0.005712       0.005280
+4        4            American Bittern  ...       0.001443       0.001333
+..     ...                         ...  ...            ...            ...
+345    345  Yellow-crowned Night Heron  ...       0.020426       0.021284
+346    346     Yellow-headed Blackbird  ...       0.000635       0.000883
+347    347       Yellow-rumped Warbler  ...       0.201950       0.201399
+348    348       Yellow-throated Vireo  ...       0.024407       0.024816
+349    349     Yellow-throated Warbler  ...       0.019272       0.019302
+
+[350 rows x 8 columns]
+
+Best performing class: Northern Cardinal with F1 score of 0.7834
+Worst performing class: Alder Flycatcher with F1 score of 0.0000
+
+Count Regression:
+Overall RMSE: 6.8798
+Overall MAE: 0.9430
+
+RMSE by class:
+     Class                       Label  ...  Max Count  Non-Zero Rate
+0        0          Acadian Flycatcher  ...       13.0       0.007539
+1        1            Alder Flycatcher  ...        0.0       0.000130
+2        2         Allen's Hummingbird  ...        1.0       0.000909
+3        3             American Avocet  ...      500.0       0.005280
+4        4            American Bittern  ...        5.0       0.001333
+..     ...                         ...  ...        ...            ...
+345    345  Yellow-crowned Night Heron  ...       27.0       0.021284
+346    346     Yellow-headed Blackbird  ...        4.0       0.000883
+347    347       Yellow-rumped Warbler  ...     1425.0       0.201399
+348    348       Yellow-throated Vireo  ...      125.0       0.024816
+349    349     Yellow-throated Warbler  ...        6.0       0.019302
+
+[350 rows x 10 columns]
+
+Best performing class: Couch's Kingbird with RMSE of 0.0076
+Worst performing class: Red-winged Blackbird with RMSE of 73.3740
+
+Combined metrics:
+                          Label  F1 Score  ...  Avg Count  Non-Zero Rate
+0            Acadian Flycatcher  0.131687  ...   0.015002       0.007539
+1              Alder Flycatcher  0.000000  ...   0.000000       0.000130
+2           Allen's Hummingbird  0.000000  ...   0.001096       0.000909
+3               American Avocet  0.101852  ...   0.161445       0.005280
+4              American Bittern  0.000000  ...   0.002193       0.001333
+..                          ...       ...  ...        ...            ...
+345  Yellow-crowned Night Heron  0.093250  ...   0.039178       0.021284
+346     Yellow-headed Blackbird  0.000000  ...   0.000923       0.000883
+347       Yellow-rumped Warbler  0.446463  ...   1.560037       0.201399
+348       Yellow-throated Vireo  0.126292  ...   0.051757       0.024816
+349     Yellow-throated Warbler  0.087829  ...   0.025792       0.019302
+
+[350 rows x 6 columns]
+
+RMSE when binary prediction is correct: 6.8742
+Per-class normalized RMSE when binary prediction is correct: 2.5726
+RMSE when binary prediction is incorrect: 6.9133
+Per-class normalized RMSE when binary prediction is incorrect: 2.8321
+
+Summary and Conclusions:
+1. Binary Classification:
+   - Overall accuracy: 0.8565, F1 score: 0.2811
+   - Best class: Northern Cardinal (F1=0.7834)
+   - Worst class: Alder Flycatcher (F1=0.0000)
+
+2. Count Prediction:
+   - Overall RMSE: 6.8798
+   - Best class: Couch's Kingbird (RMSE=0.0076)
+   - Worst class: Red-winged Blackbird (RMSE=73.3740)
+
+3. Per-Class Normalized Count Prediction (0-1 scale):
+   - Best class: Couch's Kingbird (Normalized RMSE=0.0076)
+   - Worst class: Belted Kingfisher (Normalized RMSE=0.2687)
+
+Note: Count values were normalized by dividing by each class's maximum value to create
+a 0-1 scale for each class independently, allowing for fair comparisons between features with vastly different magnitudes.
+
+Analysis results saved to: experiments/default_experiment/version_12/analysis_results
